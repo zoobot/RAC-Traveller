@@ -1,0 +1,114 @@
+<html lang="en-US">
+    <head>
+        <title>RAC Traveler</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/css/bootstrap.css">
+        <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.0/css/font-awesome.css" />
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC-41Qlmz-7BmBW3Q6YzfdUVQ99niwUttk"></script>
+        <script src="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>  
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.10/angular.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.10/angular-route.min.js"></script>
+        <!-- <script type="text/javascript" src="rac.js"></script> -->
+        <link rel="stylesheet" type="text/css" href="rac.css">
+    </head>
+
+
+  <body>
+
+        <nav class="navbar navbar-default">
+            <div class="container">
+            <div class="navbar-header" id="links">
+                <a class="navbar-brand" href="">#RP28 Project</a>
+            </div>
+                <ul class="nav navbar-nav navbar-right" id="links">
+                  <li><a onclick="showhome()"><i class="fa fa-home"></i> Home</a></li>
+                  <li><a onclick="showfav()"><i class="fa fa-shield"></i> RAC Top Spots</a></li>
+                  <li><a onclick="showabout()"><i class="fa fa-shield"></i> About</a></li>
+                  <li><a href="https://twitter.com/ractraveler" class="twitter-follow-button" data-show-count="false">Follow @ractraveler</a><script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+                  </li>
+                 
+                  
+                </ul>
+            </div>
+        </nav>
+   
+
+
+    <div id="heading_main">
+        <div class="container">
+            <div class="topspace">
+                <h1>RAC Traveler</h1>
+
+                <div id="tweeter">
+                <a class="twitter-timeline" data-width="220" data-height="220" data-theme="light" href="https://twitter.com/ractraveler">Tweets by RACTraveler</a>
+                 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script></div>
+
+                <br>
+                    
+                        <div class="input-group">
+                            <form id="create-form">
+                                <input id="address-input" type="text" class="form-control" placeholder="Where will you send RAC traveler?">
+                                <!-- <input id="address-input" type="text" placeholder="Where will you send RAC traveler?"> -->
+                                <!-- <span class="input-group-btn"> -->
+                                <!-- <button onclick="searchAddress();" class="btn btn-secondary" type="button">Send</button> -->
+
+                                <!-- <button "onclick="searchAddress();" type="button" >Send</button> -->
+                                <button class="btn btn-secondary">Send</button>
+                                <!-- </span> -->
+                            </form>
+
+                        
+                        </div>
+                    
+            </div>
+        </div>
+    </div>
+
+    <div id="heading_fav">
+        <div class="container">
+            <div class="topspace">
+                <h1>RAC's Favorite Cities</h1>
+                   <ul class="inline">
+                
+                    <li><a onclick="clicker(sydney, -33.890542, 151.274856)">Sydney</a></li>
+                    <li><a onclick="clicker(sanfrancisco, 37.7836887, -122.4112249)">San Francisco</a></li>
+                    <li><a onclick="clicker(losangeles, 34.1381212, -118.3555723)">Los Angeles</a></li>
+                   </ul>
+            </div>
+        </div>
+    </div>
+<div id="heading_about">
+        <div class="container">
+            <div class="topspace">
+                <h1>About</h1><br><center>
+                <div class="transparent">
+                    <p>Rac Traveler is essentially a robot that tweets a message pertaining to a destination set by user input. The content of the tweet is created by a random sentence generator. Some call it gibberish, but we call it poetic. The robot then shows the location of it's travel via Google Maps.</p>  
+                    <p>Rose Meyers, Alonzo Alden, Chloe Chen of Hack Reactor #RP28</p>
+                 </div> </center>
+            </div>
+        </div>
+</div>
+
+    <div id="outerdiv">
+        <div id="googleMap"></div>
+    </div>   
+   
+
+    
+         
+        
+   
+
+
+          
+    <div id="footer">
+        <div class="container">
+        <p class="text-muted">Copyright ©2014 RAC, Inc.</p>
+        </div>
+    </div>
+      <script type="text/javascript" src="jquery.js"></script>
+        <script type="text/javascript" src="postget.js"></script>
+    </body>
+</html>
