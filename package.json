@@ -4,12 +4,9 @@
   "description": "traveler bot",
   "main": "index.html",
   "dependencies": {
-    // "angular": "^1.5.7",
-    // "async": "file:node_modules/async",
     "body-parser": "^1.15.2",
     "express": "^4.14.0",
     "express-parameters": "^1.0.3",
-    // "googleapis": "^10.0.0",
     "googlemaps": "^1.6.0",
     "json": "^9.0.4",
     "lodash": "^4.13.1",
