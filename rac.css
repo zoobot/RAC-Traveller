@@ -37,13 +37,20 @@ body {
 	float: left;
 	margin-left: 3%;
 	margin-top: ;
-	display: inline-block;
+/*	display: inline-block;
 	border-radius: 10%;
 	border-color: white;
-	border: solid;
+	border: solid;*/
+	border-radius: 9px;
 }
 
-#heading_main { 
+.timeline-Widget {
+    max-width: 1200px;
+    background-color: #fff;
+     border-radius: 0px;
+}
+
+#heading_main {
 	background-image: url("sunset_boat.png");
 	background-size: cover;
 	max-width: 100%;

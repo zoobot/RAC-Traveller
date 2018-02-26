@@ -24,6 +24,7 @@ function showabout() {
 // //-------------------------------------------------
 
 
+// // GOOGLE MAPS API KEY: AIzaSyC-41Qlmz-7BmBW3Q6YzfdUVQ99niwUttk
 
 
 var map;
@@ -188,16 +189,16 @@ console.log("END OF GOOGLE MAP SEARCH");
 // //-------------------------------------------------
 
 // //Setting up a user stream
-// // var stream = T.stream('user');
-// // // Any time someone follows me
-// // stream.on('follow', followed);
+// var stream = T.stream('user');
+// // Any time someone follows me
+// stream.on('follow', followed);
 
-// // function followed(eventMsg){
-// //  console.log("Follow Event");
-// //  var name = eventMsg.source.name;
-// //  var screenName = eventMsg.source.screen_name;
-// //  tweetIt('@' + screenName + ' Travel');
-// // }
+// function followed(eventMsg){
+//  // console.log("Follow Event");
+//  var name = eventMsg.source.name;
+//  var screenName = eventMsg.source.screen_name;
+//  tweetIt('@' + screenName + ' Travels');
+// }
 
 
 // //  search twitter for all tweets containing the word 'banana' since July 11, 2011

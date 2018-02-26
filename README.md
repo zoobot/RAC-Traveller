@@ -1,6 +1,6 @@
-# RAC-Traveller
+# RAC_Traveler
 A Twitter travel bot using Google Maps API
-Made by Alonzo and Rose
+Made by Alonzo Alden and Rose
 
 This twitter bot sends tweet poetry based on Google Map API location input location.
 
